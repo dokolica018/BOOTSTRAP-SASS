@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Raleway:400,700');
+:root {
+    --pink: #f20f97;
+    --black: #000;
+    --white: #fff;
+    --transition: .4s ease;
+    --gray: gray;
+    --lightgray: #f8f8f8;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+p{
+    font-size: 0.8rem;
+}
+hr {
+    margin: 0;}
+/* HEADER */
+header{
+    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+.navbar-nav li a{
+    color: var(--white) !important;
+}
+.headings{
+    margin-top: 150px;
+    padding-bottom: 100px;
+}
+.navbar-toggler {
+    border: 1px solid #54081ced !important;
+    background-color: #7d0323ed;
+}
+/* ABout */
+.about button,
+.form button{
+    color: black;
+    border: 1px solid black;
+}
+.about button:hover,
+.form button:hover{
+    background-color: var(--pink);
+    border: none;
+}
+
+.about .col-md-5 img,
+.creative .col-md-4 img,
+.form .col-md-5 img{
+    border-radius: 30px;
+    box-shadow: 0 0 20px gray;
+}
+.underline{
+    border: 1px solid var(--pink);
+    width: 20%;
+}
+/* borijke */
+.col-md-3 h2::after{
+    display: block;
+    content: "";
+    height: 2px;
+    background-color: gray;
+    margin:10px auto;
+    width: 20%;   
+}
+/* team */
+.team .col-md-4{
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.col-md-4 .hr1{
+    border:1px solid var(--pink);
+    position: relative;
+    left: 22%;
+    z-index: 999;
+}
+.col-md-4 .hr2{
+    border:1px solid var(--pink);
+    position: relative;
+    right: 22%;
+    z-index: 999;
+}
+/* CREATIVE */
+.creative h4,
+.footer h4{
+    color: var(--pink);
+}
+/* Gallery */
+.row .col-md-3 button{
+    background-color: var(--pink);
+    color: var(--white);
+    border: none;
+    padding: 5px;
+    position: relative;
+    top: -50%;
+}
+.col-md-3 img{
+    width: 100%;
+}
+/* FORM */
+.form-group {
+    margin: 1rem 0;
+}
+i{
+    color: var(--pink);
+}
+i.fab{
+    margin-left: 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+    .headings {
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    header{
+        height: 70vh;
+    }
+    header p{
+        padding: 0 10px;
+    }
+    .h2, h2 {
+        font-size: 1.7rem;
+    }
+    button{
+        margin-bottom: 20px;
+        margin-left: 80px;
+    }
+    .about button{
+        text-align: center;
+    }
+    .col-md-4 .hr1,
+    .col-md-4 .hr2 {
+        border: 1px solid var(--pink);
+        position: relative;
+        left: 0%;
+        z-index: 999;
+        background: var(--pink);
+        width: 100%;
+        text-align: center;
+    }
+
+    .team .col-md-4{
+        padding:0px !important;
+        padding-bottom: 20px !important;
+    }
+    .team .col-md-4 p {
+        margin-bottom: 0 !important;
+    }
+    .col-md-4 .hr1, .col-md-4 .hr2 {
+        background-color: var(--pink);
+    }
+    i.fab {
+        margin-left: 1px;
+        margin-right: 2px;
+        font-size: .8rem    ;
+    }
+    .creative .col-md-4{
+        text-align: center;
+        padding: 20px 0;
+    }
+    button {
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+    .row .col-md-3 button {
+        top: 0%;
+    }
+    .gallery .col-md-3 img{
+        width: 100%;
+        height: 100px;
+    }
+
+    .creative .col-md-4 img{
+        width: 100%;
+    }
+    .about .col-md-5 img{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .creative .col-md-4 {
+        text-align: center;
+        padding: 10px 0;
+    }
+    .col-1{
+        display: none;
+    }
+}

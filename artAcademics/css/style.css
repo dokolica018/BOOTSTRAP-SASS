@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto&family=Lora:wght@400;700&display=swap");
+:root {
+  --primaryFont: "Open Sans", sans-serif;
+  --secondaryFont: "Roboto", sans-serif;
+  --headingsFont: "Lora", serif;
+  --black: #000;
+  --darkGray: #333333;
+  --lightGray: #f2f2f2;
+  --white: #ffffff;
+  --darkBlue: #001730;
+  --blue: #337ab7;
+  --lightBlue: #4ad7d1;
+  --red: #fe4a49;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--primaryFont);
+  font-size: 16px;
+  color: var(--white);
+  line-height: 1.7;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: var(--headingsFont);
+}
+
+header{
+  background-image: url(../img/Untitled1.png);
+  background-size: cover;
+  background-position: center;
+  height:100vh;
+}
+hgroup{
+  padding:320px 0 0 200px ;
+}
+
+/* one */
+
+.one .col-md-6{
+  background: var(--lightBlue);
+  padding: 40px 20px;
+}
+.one .col-md-6 h2{
+  font-size: 3.2rem;
+  font-weight:700 ;
+  padding: 10px 0;
+}
+.col-md-6 button{
+  padding: 8px 24px;
+  letter-spacing: 2px;
+  background-color: var(--red);
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+}
+.one .plavi{
+  background-color: var(--darkBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 25%;
+}
+.one .plavi h2{
+  font-size: 9rem;
+  font-family: var(--primaryFont);
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
+}
+.one div img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+/* TWO */
+.two .col-md-6{
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+  
+}
+.two i{
+  font-size: 2rem;
+  color: var(--red);
+  margin-top: 20px;
+
+}
+.two .prvi{
+  background-color: var(--red);
+}
+.two .prvi i{
+  color: var(--white);
+}
+.two .drugi{
+  background-image:url(../img/pexelsphoto1055845.jpg) ;
+  background-position: center;
+  background-size: cover;
+}
+.two .treci{
+  background-image:url(../img/pexelsphoto1680208.jpeg) ;
+  background-position: center;
+  background-size: cover;
+}
+.two .cetvrti{
+  background-color: var(--lightBlue);
+  color: var(--black);
+}
+.two h2{
+  padding: 10px 0;
+  font-size: 3.2rem;
+}
+.two .prvi h2{
+  background-color: var(--lightBlue);
+  
+}
+.two .drugi h2,
+.two .treci h2{
+  background-color: var(--white);
+  color: black;
+  padding-right: 50px;
+  
+}
+.two .cetvrti h2{
+  background-color: var(--red);
+  
+}
+/* three */
+.three{
+  background-image: url(../img/Untitled12.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+}
+.three .col-md-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.three .col-md-8{
+  padding: 200px 150px 0 0;
+}
+.three .col-md-4 h2{
+  font-size: 12rem;
+  font-family: var(--primaryFont);
+  font-weight: bold;
+}
+.three .col-md-8 h2{
+  font-size: 4.2rem;
+}
+.three .col-md-8 h4{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.three button{
+  padding: 8px 24px;
+  letter-spacing: 2px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+}
+
+/* WHAT WE DO */
+.velika{
+  background-image: url(../img/pexelsphoto1601729.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.prva{
+  background-image: url(../img/pexelsphoto827062.jpeg);
+  background-position: center top;
+  background-size: cover;
+  height: 50vh;
+}
+.druga{
+  background-color: var(--lightBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.druga h2{
+  font-size: 4.5rem;
+}
+.treca{
+  background-image: url(../img/pexelsphoto1456452.jpeg);
+  background-position: center top;
+  background-size: cover;
+  height: 50vh;
+}
+.cetvrta{
+  background-image: url(../img/pexelsphoto1738986.jpeg);
+  background-position: center top;
+  background-size: cover;
+  height: 50vh;
+}
+
+/* studio */
+.studio .col-md-4{
+  background-color: var(--darkBlue);
+  padding-top: 50px;
+  padding-left: 200px;
+  padding-right: 70px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.studio .col-md-4 h2{
+  font-size: 3rem;
+}
+.studio .col-md-8{
+  background-image: url(../img/pexelsphoto1829743.jpeg);
+  background-position: +200px  ;
+  background-size: cover;
+  height: 70vh;
+  padding: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.studio .col-md-8 h2{
+  font-size: 12rem;
+  font-family: var(--primaryFont);
+  font-weight: bold;
+}
+/* kontakt */
+.contact .col-md-6:first-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 300px;
+}
+.contact article {
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+}
+.contact article:first-child {
+  background-image: url(../img/Untitled1.png);
+  background-position: left;
+  background-size: cover;
+}
+.contact article:last-child {
+  background-image: url(../img/pexelsphoto1089027.jpeg);
+  background-position: center bottom;
+}
+.contact i {
+  color:var(--darkBlue) ;
+  font-size: 2rem;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+@media(max-width:768px){
+  hgroup{
+    padding: 50px 10px;
+  }
+  hgroup h1 {
+    padding: 50px 10px;
+    padding-top: 300px;
+    padding-bottom: 10px;
+}
+
+hgroup h3 {
+  padding-top: 0;
+  font-size: 1.3rem;
+}
+
+.display-2 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.one .plavi{
+    flex: 0 0 100%;
+}
+.ml-n5, .mx-n5 {
+  margin-left: 0rem !important;
+}
+.h4, h4 {
+  font-size: 1.1rem;
+  padding: 0 50px 0 0;
+}
+.one .col-md-6 h2 {
+  font-size: 2rem;
+  padding: 0 150px 0 0;
+}
+.one .col-md-6 p{
+  padding: 0 70px 0 0;
+  text-align: justify;
+}
+.h5, h5 {
+  font-size: 1rem;
+}
+.two h2 {
+  font-size: 2rem;
+}
+pl-5, .px-5 {
+  padding-left: 0.1rem !important;
+}
+.druga{
+  padding: 50px;
+}
+.studio .col-md-4{
+  padding-left: 20px;
+}
+.three .col-md-4 {
+  height: 10vh;
+}
+.three .col-md-4 h2{
+  font-size: 6rem;
+  padding-top: 50px;
+}
+.three .col-md-8 {
+  padding:50px;
+}.h4, h4 {
+  font-size: .9rem;
+  padding: 0 10px 0 0;
+}
+.three .col-md-8 h2 {
+  font-size: 2.2rem;
+}
+.studio .col-md-4 {
+  padding-left: 20px;
+  padding-bottom: 50px;
+}
+.two .drugi p,
+.two .treci p{
+  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6));
+  border-radius: 10px;
+  padding: 10px;
+ 
+}
+
+}
+
+
+
+
+
+
+
+
+
+

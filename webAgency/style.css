@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400&display=swap');
+:root {
+    --tamnoPlava: #1d527c;  /* rgb(29, 82, 124) */
+    --svetloPlava: #459ad3; /* rgb(69, 154, 211) */
+    --orange: rgb(253, 127, 69);      /* rgb(253, 127, 69) */
+    --tamnoSiva: #3c3b3c;
+    --svetloSiva: lightgray;
+    --bela: #fff;
+    --transition: .3s ease;
+    --padding: 100px 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--tamnoSiva);
+    line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+/* NAV & HEADER */
+.navbar{
+    background:linear-gradient(to right, rgb(253, 127, 69), rgb(29, 82, 124)) !important;
+}
+header{
+    background-image: linear-gradient(to top, rgba(253, 127, 69,.7), rgba(29, 82, 124,.7)), url(img/baloon.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 90vh;
+}
+.btn-outline-light{
+    border-radius: 0%;
+    padding: 10px 40px;
+}
+/* ABOUT */
+.about .col-md-6 h2,
+.latest  h2{
+    color: var(--tamnoPlava);
+    font-weight: bold;
+}
+.underline{
+    display: block;
+    content: "";
+    height: 3px;
+    background-color: var(--svetloPlava);
+    width: 15%;
+    margin: 1rem 0;
+}
+.about .col-md-6 img{
+    box-shadow: 4px 4px 0 var(--tamnoPlava);
+}
+/* SERVICES */
+.services{
+    background-image:linear-gradient( rgba(29, 82, 124,.9), rgba(29, 82, 124,.9)), url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.services h2::after{
+    display: block;
+    content: "";
+    height: 3px;
+    background-color: var(--orange);
+    width: 15%;
+    margin: 1rem 0;
+}
+.services i{
+    color: var(--orange);
+    font-size: 3rem;
+}
+/* LATEST */
+.latest h2::after{
+    display: block;
+    content: "";
+    height: 3px;
+    background-color: var(--orange);
+    width: 40%;
+    margin: 1rem 0;
+    margin-left: 30%;
+}
+.latest h5{
+    font-weight: bold;
+    color: var(--tamnoPlava);
+    padding: 20px 0;
+}
+.latest button{
+    background-color: var(--tamnoPlava);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.latest button:hover{
+    color: var(--tamnoPlava);
+    background: white;
+    outline: 3px solid var(--tamnoPlava);
+}
+/* FOOTER */
+footer{
+    background-image: linear-gradient(to top, rgba(253, 127, 69,.7), rgba(29, 82, 124,.7)), url(img/baloon.jpg);
+}
+.icons i{
+    color: var(--tamnoPlava);
+    margin: 20px;
+    font-size: 2rem;
+}
+.icons a i:hover{
+    color: white;
+    transition: var(--transition);
+}
+/* RESPONSIVE */
+@media(max-width: 768px){
+    .h1, h1 {
+        padding-top: 80px;
+        font-size: 2rem;
+    }
+    header {
+    height: 60vh;
+    }
+    header p{
+        font-size: .8rem;
+        padding: 5px 20px;
+    }
+    .services .flex-column{
+        flex-direction: row !important;
+    }
+    .services .col-md-3{
+        margin-bottom: 50px;
+    }
+    .latest button{
+        margin-bottom: 30px;
+    }
+    /* .about .col-md-6 {
+        flex-direction: column !important;
+} */
+}

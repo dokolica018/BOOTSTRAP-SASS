@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.logo, nav > a, nav ul li a {
+  color: #fff;
+  margin: 0 20px;
+}
+
+.active {
+  color: #333;
+}
+
+.btn, header .carousel-inner .text button, .destinacije button, .trip button {
+  font-size: 1.1rem;
+  background-color: transparent;
+  color: #fff;
+  letter-spacing: 1.5px;
+  border: none;
+  padding: 15px 20px;
+  border: 2px solid #fff;
+  font-size: 1.3rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.btn:hover, header .carousel-inner .text button:hover, .destinacije button:hover, .trip button:hover {
+  background-color: red;
+  color: #fff;
+  border: 2px solid red;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+nav {
+  padding: 0  30px;
+  background-color: #49bfff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 15px;
+}
+
+nav ul li:last-child a {
+  background-color: red;
+  text-transform: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+nav ul li:last-child a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+}
+
+header .carousel-inner .text {
+  padding-bottom: 12%;
+  text-align: left;
+}
+
+header .carousel-inner .text h2 {
+  font-size: 4rem;
+}
+
+header .carousel-inner .text p {
+  font-size: 1.3rem;
+}
+
+header .carousel-inner .text button {
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  header .carousel-inner .d-none {
+    display: block !important;
+  }
+  header .carousel-inner .text {
+    padding-bottom: 0;
+  }
+  header .carousel-inner .text h2 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+  }
+  header .carousel-inner .text p {
+    font-size: .8rem;
+    display: none;
+  }
+  header .carousel-inner .text .btn, header .carousel-inner .text button, header .carousel-inner .text .destinacije button, .destinacije header .carousel-inner .text button, header .carousel-inner .text .trip button, .trip header .carousel-inner .text button {
+    font-size: .7rem;
+    padding: 3px;
+  }
+}
+
+.intro {
+  padding: 70px 0;
+}
+
+.intro h2 {
+  text-transform: capitalize;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.intro h2 span {
+  background-color: #49bfff;
+}
+
+.intro p {
+  padding-top: 10px;
+}
+
+.intro .col-md-3 {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro .col-md-3 i {
+  color: #49bfff;
+  font-size: 2rem;
+  padding: 20px;
+}
+
+.intro .col-md-3 h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.intro .col-md-3 h4 {
+  font-weight: bold;
+}
+
+.intro .col-md-3 span {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .intro .col-12 {
+    text-align: center;
+  }
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+  .intro p {
+    font-size: .9rem;
+  }
+  .intro .col-12:last-child {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    position: relative;
+    top: -38px;
+  }
+  .intro i {
+    color: #49bfff;
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+  .intro h3 {
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  .intro h4 {
+    font-weight: normal;
+  }
+}
+
+.plan {
+  background-color: #49bfff;
+  padding: 70px 0;
+}
+
+.plan h2 {
+  text-transform: capitalize;
+  font-size: 4rem;
+  padding-bottom: 30px;
+}
+
+.plan .col-md-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.plan .col-md-4 i {
+  font-size: 2.5rem;
+  width: 50px;
+  height: 50px;
+  padding: 35px;
+  background-color: #fff;
+  color: #49bfff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+.plan .col-md-4 h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.destinacije {
+  padding: 70px 0;
+}
+
+.destinacije .col-md-3 {
+  margin-bottom: 35px;
+}
+
+.destinacije .col-md-3 a {
+  display: block;
+  border-radius: 20px;
+  color: #333;
+}
+
+.destinacije .col-md-3 a:hover {
+  border-radius: 20px;
+  text-decoration: none;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 0 20px #333;
+          box-shadow: 0 0 20px #333;
+}
+
+.destinacije .col-md-3 i {
+  color: #49bfff;
+  padding-right: 10px;
+}
+
+.destinacije .col-md-3 h5 i:last-child {
+  background-color: #49bfff;
+  color: #fff;
+  padding: 10px 5px;
+  position: relative;
+  top: -5rem;
+}
+
+.destinacije .dugme {
+  text-align: center;
+}
+
+.destinacije button {
+  background-color: red;
+  color: #fff;
+  border-radius: 7px;
+  margin: 35px 0 0 0;
+  font-weight: bold;
+}
+
+.destinacije button:hover {
+  background-color: #49bfff;
+  border-radius: 7px;
+  border: 2px solid #49bfff;
+}
+
+.trip {
+  padding: 70px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(img/slide-palms.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/slide-palms.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.trip h2 {
+  font-size: 3.5rem;
+}
+
+@media (max-width: 768px) {
+  .trip h2 {
+    font-size: 2.5rem;
+  }
+  .trip p {
+    font-size: 0.9rem;
+  }
+  .trip button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+.popular {
+  padding: 70px 0;
+}
+
+.popular .col-md-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 23%;
+          flex: 0 0 23%;
+}
+
+@media (max-width: 768px) {
+  .popular .col-md-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 47%;
+            flex: 0 0 47%;
+    margin-bottom: 40px;
+  }
+}
+
+.popular h2 {
+  font-size: 3rem;
+}
+
+.popular p {
+  padding-bottom: 50px;
+}
+
+.popular h3 {
+  position: relative;
+  color: #333;
+  top: -2.4rem;
+}
+
+.popular .icons {
+  position: relative;
+  top: -2rem;
+  left: 4.8rem;
+  background-color: #49bfff;
+  display: inline-block;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .popular .icons {
+    left: 0;
+  }
+}
+
+.popular .col-md-3:nth-child(1) {
+  background-image: url(img/italia.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 14rem;
+}
+
+.popular .col-md-3:nth-child(2) {
+  background-image: url(img/malta.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 14rem;
+}
+
+.popular .col-md-3:nth-child(3) {
+  background-image: url(img/greece.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 14rem;
+}
+
+.popular .col-md-3:nth-child(4) {
+  background-image: url(img/croatia.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 14rem;
+}
+
+.footer h2 {
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.footer .icons i:nth-child(1) {
+  color: blue;
+}
+
+.footer .icons i:nth-child(2) {
+  color: orangered;
+}
+
+.footer .icons i:nth-child(3) {
+  color: blue;
+}
+
+.footer .icons i:nth-child(4) {
+  color: red;
+}
+
+.footer .icons i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.footer input {
+  background-color: black;
+  border: 1px solid lightgray;
+  color: lightgray;
+}
+
+.footer .col-md-3:last-child i {
+  position: relative;
+  left: -2rem;
+}
+
+@media (max-width: 768px) {
+  .footer .col-md-3:last-child i {
+    position: relative;
+    left: 160px;
+    top: -25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

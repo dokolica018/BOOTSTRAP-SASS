@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins:400,700&display=swap');
+:root {
+    --gray1: #515365;
+    --gray2: #4e5062;
+    --gray3: #4b4d5e;
+    --gray4: #484a5a;
+    --purple: rgb(110, 37, 148);
+    --yellow: rgb(236, 212, 68);
+    --white: #fff;
+    --text: #444;
+    --transition: .4s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins';
+}
+
+
+body{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Lato';
+    color: var(--text);
+}
+
+/* NAV */
+nav{
+    background: linear-gradient(to right,rgb(110, 37, 148),rgb(236, 212, 68));
+}
+nav ul li{
+    margin-left: 5%;
+    padding: 1% 0;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: var(--purple);
+}
+nav ul li a{
+    color: var(--white);
+    font-size: 1rem;
+}
+nav ul li a i{
+    font-size: 2rem;
+}
+dl, ol, ul{
+    margin-bottom: 0;
+}
+/* Header */
+header{
+    background-image:linear-gradient(rgba(110, 37, 148,.9),rgba(110, 37, 148,.9)), url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 80vh;
+}
+header .display-3{
+    margin-top: 50px;
+    font-weight: 700;
+}
+header h1::after{
+    display: block;
+    content: "";
+    height: 4px;
+    border-radius: 20px;
+    background-color: var(--yellow);
+    width: 20%;
+    margin: 50px auto;
+}
+header p{
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+header button{
+    padding: 10px 30px;
+    color: var(--purple);
+    text-transform: uppercase;
+    transition: var(--transition);
+    border: none;
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+header button:hover{
+    background-color: var(--yellow);
+    
+}
+/* ABOUT */
+.about .col-md-6{
+    padding: 60px;
+}
+.about .col-md-6.prvi{
+    background: var(--gray1);
+}
+.about .col-md-6.drugi{
+    background: var(--gray2);
+}
+.about .col-md-6.treci{
+    background: var(--gray3);
+}
+.about .col-md-6.cetvrti{
+    background: var(--gray4);
+}
+.about .col-md-6 h2{
+    font-weight: bold;
+}
+.about .col-md-6 p{
+    padding: 30px 0;
+}
+.about .col-md-6 i{
+    color: var(--yellow);
+    font-size: 4rem;
+    padding-bottom: 30px;
+}
+.about .col-md-6 button{
+    padding: 10px 30px;
+    background: transparent;
+    color: var(--yellow);
+    border: 1.5px solid var(--yellow);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    
+}
+.is .col-md-7{
+    padding: 5%;
+}
+.is h2{
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    color: var(--gray4);
+}
+.is h2::after{
+    display: block;
+    content: "";
+    height: 4px;
+    border-radius: 20px;
+    background-color: var(--gray4);
+    width: 14%;
+    margin: 30px 0;
+}
+
+.is hr{
+    margin: 0 !important;
+}
+.is .zadnji{
+    display: block;
+    content: "";
+    height: 4px;
+    border-radius: 20px;
+    background-color: var(--yellow);
+    width: 20%;
+    margin: 50px auto;
+}
+/* .is hr.hr2{
+    margin: 0%;
+    display: block;
+    content: "";
+    height: 3px;
+    background-color: var(--yellow);
+    width: 100%;
+} */
+
+/* CONTACT */
+.contact{
+    background: var(--yellow);
+}
+.contact h1{
+    padding-top: 50px;
+    color: var(--gray4);
+    font-size: 3rem;
+}
+.contact h1::after{
+    display: block;
+    content: "";
+    height: 5px;
+    border-radius: 20px;
+    background-color: var(--gray4);
+    width: 6%;
+    margin: 50px auto;
+}
+.contact button{
+    padding: 10px 30px;
+    color: var(--white);
+    background: var(--purple);
+    border: none;
+    transition: var(--transition);
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+.contact button:hover{
+    color: var(--yellow);
+}
+footer{
+    background: var(--text);
+}
+footer h3{
+    font-weight: bold;
+}
+footer h3::after{
+    display: block;
+    content: "";
+    height: 4px;
+    border-radius: 20px;
+    background-color: var(--yellow);
+    width: 100px;
+    margin: 40px 0 ;
+}
+.icons i{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+footer button{
+    padding: 10px 30px;
+    background: transparent;
+    color: var(--yellow);
+    outline: 2px solid var(--yellow);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    border: none;
+    margin-top: 20px;
+}
+footer button:hover{
+    background-color: var(--yellow);
+    color: var(--text);
+    
+}
+
+@media(max-width:768px){
+    *{
+        line-height: 1.4;
+    }
+    nav ul li{
+        margin:   auto 10px;
+    }
+    nav ul li a{
+        font-size: .8rem;
+    }
+        .display-3 {
+        font-size: 2.5rem;
+        margin-bottom: 80px;
+    }
+    header{
+        background-position: bottom;
+    }
+    header h1::after {
+        margin: 30px auto;
+    }
+    header p {
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 10px;
+    }
+    header button{
+        font-size: 1rem;
+    }
+    .about h2{
+        font-size: 1.2rem;
+    }
+    .about p{
+        font-size: .8rem;
+        text-align: justify;
+    }
+    .about .col-md-6 button{
+        font-size: .8rem;
+    }
+    .about i{
+        font-size: 2.5rem !important;
+        padding-bottom: 15px !important;     
+    }
+    .about .col-md-6 p{
+        padding: 15px 0;
+        margin-bottom: .5rem;
+    }
+    .is .col-md-7 {
+        padding: 5px;
+    }
+    .is h2 {
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin-top: 5px;
+        color: var(--gray4);
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    .is h2::after{
+        margin: 5px 0;
+    }
+    .is p{
+        font-size: .6rem;
+        margin-bottom: 0;
+    }
+    .pb-5, .py-5 {
+        padding-bottom: 1rem !important;
+    }
+    .contact h1{
+        font-size: 2rem;
+        padding-top: 15px;
+    }
+    .contact h1::after {
+        display: block;
+        content: "";
+        height: 5px;
+        border-radius: 20px;
+        background-color: var(--gray4);
+        width: 10%;
+        margin: 20px auto;
+    }
+    .contact p{
+        font-size: .8rem;
+        padding: 0 20px;
+    }
+    .contact button{
+        font-size: .9rem;
+    }
+    .p-5{
+        padding: 15px !important;
+    }
+    footer h3{
+        font-size: 1.5rem;
+    }
+    footer p{
+        font-size: .8rem;
+        text-align: justify;
+    }
+    .pl-5, .px-5 {
+        padding-left: 1rem !important;
+    }
+    .pr-5, .px-5 {
+        padding-right: .5rem !important;
+    }
+    .mb-5, .my-5 {
+        margin-bottom: 1.5rem !important;
+    }
+    .mt-5, .my-5 {
+        margin-top: 1.5rem !important;
+    }
+    .icons i {
+        font-size: .9rem;
+        margin-bottom: 10px;
+    }
+    footer h3::after{
+        margin: 30px 0;
+    }
+    footer button{
+        font-size: .8rem;
+    }
+    .about .col-md-6 {
+        padding: 30px 10px;
+    }
+    .about i{
+        font-size: 2rem !important;
+    }
+    
+
+}

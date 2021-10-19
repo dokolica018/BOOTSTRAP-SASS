@@ -1,0 +1,90 @@
+:root {
+    --violet: rgb(65, 42, 107);
+    --yellow: #fadb61;
+    --gray: #f8f8f8;
+}
+.navbar{
+    background: var(--violet) !important;
+}
+.carousel-caption {
+    bottom: 30%;
+}
+h2::after{
+    display: block;
+    content: "";
+    height: 8px;
+    width: 150px;
+    background: var(--yellow);
+    margin: 30px auto 0 auto;
+    border-radius: 10px;
+}
+.about img{
+    border-radius: 10px;
+}
+
+.works img{
+    border-radius: 30px;
+    box-shadow: 0 0 20px gray;
+}
+.works .col-md-3{
+    margin-bottom: 30px;
+}
+.jumbotron{
+    border-radius: 0%;
+    background-image:linear-gradient(rgba(65, 42, 107, .7),rgba(65, 42, 107, .7)), url(img/slide-1.jpg);
+    margin-bottom: 0;
+    height: 50vh;
+}
+
+.team img{
+    border-radius: 30px;
+    box-shadow: 0 0 20px gray;
+}
+.contact i{
+    color: var(--violet);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact .fab:hover{
+    color: var(--yellow);
+}
+footer{
+    background-color: var(--yellow);
+}
+
+@media(max-width: 768px){
+    .display-1 {
+        font-size: 4rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    .d-none{
+        display: block !important;
+    }
+    .carousel-inner > .item > img {
+        min-width: 100%;
+        width: 100%;
+      }
+      header .carousel-caption h5 {
+        font-size: 3rem;
+      }
+      header .carousel-caption p {
+        font-size: 2rem;
+      }
+      .about img {
+        margin-bottom: 20px;
+      }
+      .team .col-8 {
+        margin: 0 auto;
+      }
+      .btn{
+          margin: top 50px !important ;
+      }
+
+      h1, h2, h3, h4, h5, h6{
+          font-size: 2rem;
+      }
+
+}
